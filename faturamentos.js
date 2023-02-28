@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const jsonFile = fs.readFileSync('./faturamento.json');
+const jsonFile = fs.readFileSync('dados.json');
 const faturamentoDiario = JSON.parse(jsonFile);
 
 let menorFaturamento = faturamentoDiario[0].valor;
